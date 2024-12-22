@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e0aaff, #ff9f98); /* تدرج زهري هادئ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.card h1 {
+    color: #ff7b9e; /* لون وردي هادئ */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.decorated-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center; /* لجعل النص في منتصف الصفحة */
+}
+
+button {
+    background-color: #00aaff; /* زر باللون الأزرق الفاتح */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0088cc; /* تأثير تحويم أغمق قليلاً */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: right;
+    font-size: 16px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td:nth-child(2), table td:nth-child(3) {
+    text-align: center;
+    color: #555;
+}
+
+table td:nth-child(3) {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+/* تعديل اللون للأعمدة الأول والأخير */
+table td:first-child, table td:last-child {
+    background-color: #00aaff; /* اللون الأزرق الفاتح */
+    color: #fff; /* النص الأبيض ليتناسب مع الخلفية */
+}
+
+table td:nth-child(2), table td:nth-child(3) {
+    color: #333; /* تعديل اللون لبقية الأعمدة ليكون داكن لتباين أفضل */
+}
+
+.barcode {
+    width: 150px; /* يمكنك تعديل العرض كما تريد */
+    margin: 20px 10px 20px 0; /* مسافة حول الصورة */
+    display: block; /* لجعل الصورة في منتصف الصفحة */
+}
+
+.second-image {
+    width: 150px; /* يمكنك تعديل العرض كما تريد */
+    margin: 20px 0 20px 10px; /* مسافة حول الصورة */
+    display: block; /* لجعل الصورة في منتصف الصفحة */
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* لجعل العناصر متراصفة بشكل أفقي */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    width: 50px; /* تعديل العرض حسب الحاجة */
+    height: auto;
+    margin-right: 10px; /* إضافة مسافة بين الصورة والنص */
+}
+
+.report-check {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center
